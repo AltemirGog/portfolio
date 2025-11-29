@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Альтемир Гогуноков | Frontend разработчик</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="home-content">
+            <h1 class="home__h1">Привет, я Альтемир<br><span class="gradient-text">Frontend разработчик</span></h1>
+            <p class="home__text">Создаю современные и адаптивные веб-приложения с фокусом на актуальные технологии</p>
+            <div class="home-buttons">
+                <a href="#portfolio" class="btn primary smooth-scroll">Мои работы</a>
+                <a href="#contacts" class="btn secondary smooth-scroll">Связаться</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="about__h2">Обо мне</h2>
+                <p>Мой путь во фронтенде начался в 2022 году с изучения фундаментальных технологий (HTML, CSS, JS). Со временем я перешёл к React и теперь фокусируюсь на использовании актуального стека для создания эффективных и более сложных пользовательских интерфейсов. Стремлюсь к расширению компетенций и переходу на позицию fullstack-разработчика.</p>
+            </div>
+            <div class="stack">
+                <div class="stack-item">
+                    <img src="./assets/stacks/html-5.png" alt="html">
+                    <span>HTML</span>
+                </div>
+                <div class="stack-item">
+                    <img src="./assets/stacks/css-3.png" alt="css">
+                    <span>CSS</span>
+                </div>
+                <div class="stack-item">
+                    <img src="./assets/stacks/js.png" alt="javascript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="stack-item">
+                    <img src="./assets/stacks/react.png" alt="react">
+                    <span>React</span>
+                </div>
+                <div class="stack-item">
+                    <img src="./assets/stacks/nextjs.png" alt="nextjs">
+                    <span>Next.js</span>
+                </div>
+                <div class="stack-item">
+                    <img src="./assets/stacks/tailwind.png" alt="tailwind">
+                    <span>Tailwind</span>
+                </div>
+                <div class="stack-item">
+                    <img src="./assets/stacks/git.png" alt="git">
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="portfolio__h2">Мои проекты</h2>
+        <div class="gallery">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/portfolio/calc.png" alt="Калькулятор" />
+                </div>
+                <div class="project-info">
+                    <h3>Калькулятор</h3>
+                    <p>Веб-приложение, созданное с помощью чистого HTML, CSS и JavaScript.</p>
+                    <div class="project-tech">HTML • CSS • JavaScript</div>
+                    <a href="https://github.com/AGTim7" target="_blank" class="project-link">Узнать больше</a>
+                </div>
+            </div>
+            
+            <div class="project-card reverse">
+                <div class="project-image">
+                    <img src="./assets/portfolio/krestnol.png" alt="Крестики-нолики" />
+                </div>
+                <div class="project-info">
+                    <h3>Крестики-нолики</h3>
+                    <p>Браузерная игра с интерактивным интерфейсом, реализованная на HTML, CSS и JavaScript.</p>
+                    <div class="project-tech">HTML • CSS • JavaScript</div>
+                    <a href="https://github.com/AGTim7" target="_blank" class="project-link">Узнать больше</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/portfolio/weather.png" alt="Прогноз погоды" />
+                </div>
+                <div class="project-info">
+                    <h3>Прогноз погоды</h3>
+                    <p>Веб-приложение на React с использованием API для отображения метеоданных.</p>
+                    <div class="project-tech">React • API • CSS</div>
+                    <a href="https://github.com/AGTim7/weather" target="_blank" class="project-link">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="contacts-content">
+            <div class="contacts-text">
+                <h2 class="contacts__h2">Контакты</h2>
+                <p>В любое время можете связаться со мной</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Телефон:</strong>
+                        <a href="tel:+79034915885" target="_blank">+7 903 491-58-85</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:altemirgogunokov@gmail.com" target="_blank">altemirgogunokov@gmail.com</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://vk.com/altosss" target="_blank" class="social-link">VK</a>
+                        <a href="https://github.com/AGTim7" target="_blank" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <form id="contact-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <span id="email-error" class="error"></span>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Отправить сообщение</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Альтемир Гогуноков | Frontend разработчик</p>
+            <div class="footer-links">
+                <a href="tel:+79034915885" target="_blank">+7 903 491-58-85</a> | 
+                <a href="mailto:altemirgogunokov@gmail.com" target="_blank">altemirgogunokov@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

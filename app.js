@@ -1,6 +1,4 @@
-// Обновите JavaScript код
 document.addEventListener('DOMContentLoaded', function() {
-    // Плавная прокрутка для всех ссылок с хэшами
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Активное состояние навигации
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
 
@@ -43,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', setActiveLink);
 
-    // Валидация формы
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
 
@@ -59,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
             errorSpan.textContent = '';
         }
 
-        // Имитация отправки
         const submitBtn = this.querySelector('button');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Отправка...';
@@ -73,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
     });
 
-    // Анимация появления элементов при скролле
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -88,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Анимируем элементы
     document.querySelectorAll('.stack-item, .project-card, .contact-item').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
@@ -96,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Добавляем эффект частиц для главной секции
     function createParticles() {
         const homeSection = document.getElementById('home');
         for (let i = 0; i < 15; i++) {
@@ -117,7 +109,6 @@ document.addEventListener('DOMContentLoaded', function() {
     createParticles();
 });
 
-// Добавляем CSS анимацию для частиц
 const style = document.createElement('style');
 style.textContent = `
     @keyframes float {
